@@ -4,192 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrinho - Agro Sustentável</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- TOPO -->
-    <header>
-        <h1>Agrinho: Crescimento e Sustentabilidade</h1>
-        <p>Produzir hoje sem comprometer o amanhã.</p>
 
-        <nav>
-            <ul>
-                <li><a href="#economia">Economia</a></li>
-                <li><a href="#tecnologia">Tecnologia</a></li>
-                <li><a href="#desafios">Desafios</a></li>
-                <li><a href="#futuro">Futuro</a></li>
-            </ul>
-        </nav>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <h1>Agrinho: <span>Crescimento & Sustentabilidade</span></h1>
+                <p>Produzir hoje sem comprometer o amanhã.</p>
+            </div>
 
-        <button>Começar</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#economia">Economia</a></li>
+                    <li><a href="#tecnologia">Tecnologia</a></li>
+                    <li><a href="#desafios">Desafios</a></li>
+                    <li><a href="#futuro">Futuro</a></li>
+                    <li><a href="#calculadora">Calculadora</a></li>
+                </ul>
+            </nav>
+
+            <a href="#calculadora" class="btn-main">Começar</a>
+        </div>
     </header>
 
-    <hr>
+    <main>
+        
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Como o agronegócio pode crescer sem destruir os recursos naturais?</h2>
+                <p>
+                    Conheça a importância do agronegócio para a economia brasileira
+                    e as tecnologias que ajudam a produzir mais com sustentabilidade.
+                </p>
+            </div>
+        </section>
 
-    <!-- BANNER -->
-    <section>
-        <h2>Como o agronegócio pode crescer sem destruir os recursos naturais?</h2>
-        <p>
-            Conheça a importância do agronegócio para a economia brasileira
-            e as tecnologias que ajudam a produzir mais com sustentabilidade.
-        </p>
-    </section>
+        <section id="economia" class="content-section">
+            <h2 class="section-title">Economia e Produção</h2>
 
-    <hr>
+            <div class="cards-grid">
+                <article class="card">
+                    <h3>O Agro e a Economia</h3>
+                    <p>O agronegócio é um dos setores mais importantes do Brasil, contribuindo diretamente para o PIB, geração de empregos e exportações.</p>
+                </article>
 
-    <!-- PARTE 1 -->
-    <section id="economia">
-        <h2>Economia e Produção</h2>
+                <article class="card">
+                    <h3>Geração de Empregos</h3>
+                    <p>Milhões de brasileiros trabalham direta ou indiretamente em atividades ligadas ao desenvolvimento do campo.</p>
+                </article>
 
-        <article>
-            <h3>O Agro e a Economia Brasileira</h3>
-            <p>
-                O agronegócio é um dos setores mais importantes do Brasil,
-                contribuindo para o PIB, geração de empregos e exportações.
-            </p>
-        </article>
+                <article class="card">
+                    <h3>Exportações Globais</h3>
+                    <p>Produtos agrícolas brasileiros são exportados para diversos países, fortalecendo a nossa economia nacional.</p>
+                </article>
+            </div>
+        </section>
 
-        <article>
-            <h3>Geração de Empregos</h3>
-            <p>
-                Milhões de brasileiros trabalham direta ou indiretamente
-                em atividades ligadas ao campo.
-            </p>
-        </article>
+        <section id="tecnologia" class="content-section tech-bg">
+            <h2 class="section-title">Tecnologia e Sustentabilidade</h2>
 
-        <article>
-            <h3>Exportações</h3>
-            <p>
-                Produtos agrícolas brasileiros são vendidos para diversos
-                países, fortalecendo a economia nacional.
-            </p>
-        </article>
-    </section>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="image-wrapper">
+                        <img src="img/drone.jpg" alt="Drone sobrevoando plantação verdejante">
+                    </div>
+                    <h3>Drones na Agricultura</h3>
+                    <p>Ajudam a monitorar lavouras em tempo real e identificar problemas na plantação rapidamente.</p>
+                </div>
 
-    <hr>
+                <div class="feature-item">
+                    <div class="image-wrapper">
+                        <img src="img/irrigacao.jpg" alt="Sistema de irrigação automatizado por gotejamento">
+                    </div>
+                    <h3>Irrigação Inteligente</h3>
+                    <p>Sensores avançados controlam a quantidade exata de água utilizada, evitando desperdícios e poupando recursos.</p>
+                </div>
 
-    <!-- PARTE 2 -->
-    <section id="tecnologia">
-        <h2>Tecnologia e Sustentabilidade</h2>
+                <div class="feature-item">
+                    <div class="image-wrapper">
+                        <img src="img/solar.jpg" alt="Painéis solares fotovoltaicos instalados no campo">
+                    </div>
+                    <h3>Energia Solar</h3>
+                    <p>Os painéis solares fornecem energia limpa, barata e 100% renovável para as atividades rurais.</p>
+                </div>
+            </div>
+        </section>
 
-        <div>
-            <h3>Drones na Agricultura</h3>
-            <img src="img/drone.jpg" alt="Drone sobrevoando plantação">
-            <p>
-                Os drones ajudam a monitorar plantações e identificar
-                problemas rapidamente.
-            </p>
-        </div>
+        <section id="desafios" class="content-section">
+            <h2 class="section-title">Desafios Ambientais</h2>
 
-        <div>
-            <h3>Irrigação Inteligente</h3>
-            <img src="img/irrigacao.jpg" alt="Sistema de irrigação">
-            <p>
-                Sensores controlam a quantidade de água utilizada,
-                evitando desperdícios.
-            </p>
-        </div>
+            <div class="desafios-container">
+                <div class="desafios-alert">
+                    <article>
+                        <h3>Desmatamento</h3>
+                        <p>A expansão agrícola sem planejamento e fiscalização causa a perda irreparável de áreas naturais.</p>
+                    </article>
 
-        <div>
-            <h3>Energia Solar</h3>
-            <img src="img/solar.jpg" alt="Painéis solares no campo">
-            <p>
-                Os painéis solares fornecem energia limpa para atividades rurais.
-            </p>
-        </div>
-    </section>
+                    <article>
+                        <h3>Gases Poluentes</h3>
+                        <p>Algumas atividades tradicionais do setor geram emissões de CO₂ que contribuem para as mudanças climáticas.</p>
+                    </article>
+                </div>
 
-    <hr>
+                <div class="solucoes-box">
+                    <h3>Soluções Sustentáveis</h3>
+                    <ul class="styled-list">
+                        <li><span>✓</span> Plantio Direto</li>
+                        <li><span>✓</span> Rotação de Culturas</li>
+                        <li><span>✓</span> Preservação de Matas Ciliares</li>
+                        <li><span>✓</span> Uso consciente da água</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <!-- PARTE 3 -->
-    <section id="desafios">
-        <h2>Desafios Ambientais</h2>
+        <section id="futuro" class="content-section future-bg">
+            <div class="future-content">
+                <h2 class="section-title">O Futuro é Agora</h2>
+                <p class="highlight-text">
+                    A agricultura do futuro combina alta tecnologia, máxima produtividade
+                    e preservação rigorosa do meio ambiente.
+                </p>
 
-        <article>
-            <h3>Desmatamento</h3>
-            <p>
-                A expansão agrícola sem planejamento pode causar perda de áreas naturais.
-            </p>
-        </article>
+                <h3>Inovações para o Campo</h3>
+                <div class="tags-container">
+                    <span class="tag">Agricultura de Precisão</span>
+                    <span class="tag">Inteligência Artificial</span>
+                    <span class="tag">Sensores Inteligentes</span>
+                    <span class="tag">Energia Renovável</span>
+                </div>
+            </div>
+        </section>
 
-        <article>
-            <h3>Gases Poluentes</h3>
-            <p>
-                Algumas atividades do setor geram emissões que contribuem para
-                as mudanças climáticas.
-            </p>
-        </article>
+        <section id="calculadora" class="content-section calc-section">
+            <div class="calc-container">
+                <h2>Calculadora de Impacto Ambiental</h2>
+                <p>Monitore o consumo e entenda o impacto do uso da água na sua produção.</p>
 
-        <article>
-            <h3>Soluções Sustentáveis</h3>
-            <ul>
-                <li>Plantio Direto</li>
-                <li>Rotação de Culturas</li>
-                <li>Preservação de Matas</li>
-                <li>Uso consciente da água</li>
+                <form class="styled-form">
+                    <div class="form-group">
+                        <label for="agua">Consumo de água (litros):</label>
+                        <input type="number" id="agua" placeholder="Ex: 5000">
+                    </div>
+
+                    <button type="button" class="btn-submit">Calcular Impacto</button>
+                </form>
+
+                <div class="calc-result">
+                    <p>O resultado aparecerá aqui.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="referencias" class="content-section ref-section">
+            <h2>Referências e Pesquisas</h2>
+            <ul class="ref-links">
+                <li><a href="#" target="_blank">Pesquisa Embrapa - Sustentabilidade no Campo</a></li>
+                <li><a href="#" target="_blank">Dados do Agronegócio Brasileiro 2026</a></li>
+                <li><a href="#" target="_blank">Tecnologias Verdes na Agricultura</a></li>
             </ul>
-        </article>
-    </section>
+        </section>
 
-    <hr>
+    </main>
 
-    <!-- PARTE 4 -->
-    <section id="futuro">
-        <h2>O Futuro é Agora</h2>
-
-        <p>
-            A agricultura do futuro combina tecnologia, produtividade
-            e preservação ambiental.
-        </p>
-
-        <h3>Inovações para o Campo</h3>
-        <ul>
-            <li>Agricultura de Precisão</li>
-            <li>Inteligência Artificial</li>
-            <li>Sensores Inteligentes</li>
-            <li>Energia Renovável</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <!-- DESAFIO EXTRA -->
-    <section id="calculadora">
-        <h2>Calculadora de Impacto Ambiental</h2>
-
-        <p>
-            Área reservada para uma futura calculadora desenvolvida com JavaScript.
-        </p>
-
-        <form>
-            <label for="agua">Consumo de água (litros):</label>
-            <input type="number" id="agua">
-
-            <button type="button">Calcular</button>
-        </form>
-
-        <p>Resultado aparecerá aqui.</p>
-    </section>
-
-    <hr>
-
-    <!-- REFERÊNCIAS -->
-    <section id="referencias">
-        <h2>Referências</h2>
-
-        <ul>
-            <li>Link da pesquisa 1</li>
-            <li>Link da pesquisa 2</li>
-            <li>Link da pesquisa 3</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <!-- RODAPÉ -->
-    <footer>
-        <p>Projeto Agrinho 2026</p>
-        <p>Desenvolvido por Lucas Ambrosio</p>
+    <footer class="main-footer">
+        <p>Projeto Agrinho &copy; 2026</p>
+        <p>Desenvolvido com carinho por <strong>Lucas Ambrosio</strong></p>
     </footer>
 
 </body>
